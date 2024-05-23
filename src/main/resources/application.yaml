@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/a-dith-k/configurations_team_collaboration-_app
+          clone-on-start: true
+#          search-paths: {application}
+#
+#  profiles:
+#   active: dev
